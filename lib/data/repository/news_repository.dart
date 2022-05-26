@@ -10,7 +10,7 @@ class NewsRepository {
     if (response.statusCode == 200) {
       return newsModelFromJson(response.body);
     } else {
-      throw Exception("Failed to load joke");
+      throw Exception("Failed to load news");
     }
   }
 }
